@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 50px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .hero {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 50px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Button Styling */
+  .hero-buttons .btn-primary {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-buttons .btn-primary:hover {
+    background-color: #333;
+  }
+  
+  .hero-buttons .btn-secondary {
+    background-color: white; /* Button background */
+    color: black;            /* Button text color */
+    border: 2px solid gray;  /* Border for button */
+    padding: 15px 30px;      /* Adjust padding for size */
+    font-size: 1.2rem;       /* Font size */
+    border-radius: 15px;     /* Rounded corners */
+    cursor: pointer;         /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    text-decoration: none;   /* Remove underline */
+  }
+
+  #time {
+    font-weight: bold; /* Makes the time text bold */
+  }
+  
+  .hero-buttons .btn-secondary:hover {
+    background-color: rgba(85, 85, 85, 0.329);
+    color: black;
+  }
+  
+  /* Section Headings */
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .image-row {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-evenly; /* Evenly distribute images across the row */
+    align-items: center; /* Align images vertically within the row */
+    gap: 20px; /* Add consistent spacing between images */
+    width: 100%; /* Make the row span the full width */
+    margin: 20px auto; /* Center the row and add vertical spacing */
+  }
+  
+  .image-row div {
+    flex: 1; /* Allow each image container to take equal space */
+    max-width: 350px; /* Limit the maximum width of each container */
+    text-align: center; /* Center captions below the image */
+    margin: 0 auto; /* Center the container itself horizontally */
+  }
+  
+  .image-row img {
+    width: 100%; /* Force the image to fill the width of its container */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image maintains aspect ratio while filling the dimensions */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+    display: block; /* Ensures images behave as block elements */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .image-row img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
+  
+  .image-row p {
+    font-weight: bold; /* Make the captions bold */
+    margin-top: 10px; /* Adds spacing between the image and the text */
+    font-size: 1rem; /* Adjust font size if needed */
+    color: #333; /* Text color */
+    text-align: center; /* Center the text below the image */
+  }
+  
+  
+  
