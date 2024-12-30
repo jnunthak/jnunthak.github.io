@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Jeyadave's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="assets/plane7.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="logo">JNK</div>
+    <div class="homepanelflexcontainer">
+        <div>
+          <img src="assets/headshot-square.jpg" class="homepic" alt="Jeyadave's Headshot">
+        </div>
+        <div class="name-wrapper">
+          <a href="index.html" class="name">Jeyadave Nuntha Kumar</a>
+          <a href="index.html" class="subtext">CFD Engineer and Researcher &#183; USA | Singapore</a>
+        </div>
+    </div>
+
     <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
       <a href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
+      <a href="projects.html">Projects</a>
       <a href="cv.html">CV</a>
       <a href="about.html">About</a>
     </nav>
-    <div class="info">
-      <p>Singapore | USA</p>
-      <p id="time"></p>
+
+    <div class="rightpanelflexcontainer">
+      <div class="icon-wrapper">
+        <a href="https://scholar.google.com/citations?user=kcN1jgkAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link">
+          <img src="assets/google-scholar-icon.png" alt="Google Scholar" class="icon">
+          <p>Google Scholar</p>
+        </a>
+      </div>
+      <div class="icon-wrapper">
+        <a href="https://www.linkedin.com/in/nkjeyadave/" target="_blank" class="icon-link">
+          <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
+          <p>LinkedIn</p>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -28,13 +48,23 @@
   <main>
     <!-- Home Section -->
     <section id="home">
-      <div class="hero">
-        <h1>Jeyadave Nuntha Kumar</h1>
-        <p>CFD Engineer and Researcher</p>
-        <div class="hero-buttons">
-          <button class="btn-primary">Talk with me</button>
-          <a href="projects.html" class="btn-secondary">See my work</a>
+      <div class="hero">  
+        <img src="assets/headshot.jpg" class="heroheadshot" alt="Jeyadave's Hero Headshot">
+        <div class="herocontent">
+
+          <h1>Jeyadave Nuntha Kumar</h1>
+          <div>
+            <span style="color:crimson">C</span>omputational <span style="color:forestgreen">F</span>luid <span style="color:dodgerblue">
+              D</span>ynamics (<span style="color:crimson">C</span><span style="color:forestgreen">F</span><span style="color:dodgerblue">D</span>) 
+            Engineer and Researcher
+          </div>
+          <div class="hero-buttons">
+            <a href="#image-gallery" class="btn-primary">See my work</a>
+            <a href="projects.html" class="btn-secondary">Talk with me</a>
+          </div>
+          
         </div>
+        
       </div>
     </section>
 
@@ -42,16 +72,16 @@
     <section id="image-gallery">
       <div class="image-row">
         <div>
-          <img src="assets/A350 engine.png">
-          <p>Aviation</p>
+          <img src="assets/A350 engine.png" alt="Aviation" style="padding:10px">
+          <p>Research</p>
         </div>
         <div>
-          <img src="assets/Simulation.png">
-          <p>Simulation</p>
+          <img src="assets/Simulation.png" alt="Simulation" style="padding:10px">
+          <p>Teaching</p>
         </div>
         <div>
-          <img src="assets/turbulence.png">
-          <p>Turbulence</p>
+          <img src="assets/turbulence.png" alt="Turbulence" style="padding:10px">
+          <p>Projects</p>
         </div>
       </div>
     </section>
