@@ -7,12 +7,7 @@
     }
 
     .header {
-      position: fixed; /* Keeps the header at the top of the viewport */
-      top: 0;
-      left: 0;
-      z-index: 1000; /* Ensures the header stays on top */
-      display: flex;
-      width: calc(100% - 40px);
+      display:flex;
       align-items: center;
       justify-content: space-between;
       padding: 20px;
