@@ -1,266 +1,280 @@
-    /* General Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #ffffff;
-    }
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
 
-    .header {
-      display:flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-      background: white;
-      border-bottom: 1px solid #101336;
-    }
+.header {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #101336;
+}
 
-    .homepic {
-      width: 40px;
-      border-radius: 25px;
-    }
+.homepic {
+  width: 40px;
+  border-radius: 25px;
+}
 
-    .homepanelflexcontainer {
-      display: flex;
-      align-items: center; /* Centers content vertically */
-      gap: 10px;
-      flex: 1;
-    }
-    
-    .name-wrapper {
-      flex-direction: column; /* Stacks the name and subtext vertically */
-      align-items: flex-start; /* Aligns text to the left */
-      justify-content: center; /* Centers vertically within the container */
-      font-family: 'Bentham', serif;
-      font-size: 18px;
-    }
-    
-    .name-wrapper .name {
-      font-size: larger;
-      font-weight: bold;
-      text-decoration: none;
-      color: #000000;
-      margin: 0; /* Ensures no extra spacing */
-    }
-    
-    .name-wrapper:hover {
-      text-decoration: underline;
-    }
-    
-    .name-wrapper .subtext {
-      font-size: smaller;
-      color: #2b2b2b;
-      margin: 0; /* Removes default margin for consistency */
-      white-space: nowrap; /* Prevents text wrapping */
-      text-decoration: none;
-    }
+.homepanelflexcontainer {
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  gap: 10px;
+  flex: 1;
+}
 
-    .navbar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1;
-    }
+.name-wrapper {
+  flex-direction: column; /* Stacks the name and subtext vertically */
+  align-items: flex-start; /* Aligns text to the left */
+  justify-content: center; /* Centers vertically within the container */
+  font-family: 'Bentham', serif;
+  font-size: 18px;
+}
 
-    .navbar a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: larger;
-      color: #1d1348;
-      font-weight: bold;
-      cursor: pointer;
-      transition: color 0.3s ease;
-    }
+.name-wrapper .name {
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  margin: 0; /* Ensures no extra spacing */
+}
 
-    .navbar a:hover {
-      color: #555;
-      text-decoration: underline;
-    }
+.name-wrapper:hover {
+  text-decoration: underline;
+}
 
-    .rightpanelflexcontainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 10px;
-      flex: 1;
-      font-family: 'Bentham', serif;
-      font-size: 18px;
-    }
+.name-wrapper .subtext {
+  font-size: smaller;
+  color: #2b2b2b;
+  margin: 0; /* Removes default margin for consistency */
+  white-space: nowrap; /* Prevents text wrapping */
+  text-decoration: none;
+}
 
-    .icon-wrapper {
-      display: flex;
-      flex-direction: column; /* Stack icon and text vertically */
-      align-items: center; /* Center align icon and text */
-      font-family: 'Bentham', serif;
-      font-size: 18px;
-      color: #000;
-      gap: 5px; /* Add spacing between icon and text */
-    }
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
 
-    .icon-link {
-      text-decoration: none; /* Remove default link styles */
-      color: inherit; /* Inherit text color */
-      display: flex;
-      flex-direction: column; /* Stack icon and text vertically */
-      align-items: center; /* Center align content */
-      gap: 5px; /* Space between icon and text */
-    }
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: larger;
+  color: #1d1348;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
 
-    .icon-link .icon {
-      width: 24px; /* Adjust the size of the icons */
-      height: 24px;
-      transition: transform 0.3s ease; /* Add hover effect for icon */
-    }
+.navbar a:hover {
+  color: #555;
+  text-decoration: underline;
+}
 
-    .icon-link:hover .icon {
-      transform: scale(1.1); /* Slightly enlarge the icon on hover */
-    }
+.rightpanelflexcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex: 1;
+  font-family: 'Bentham', serif;
+  font-size: 18px;
+}
 
-    .icon-link p {
-      margin: 0;
-      font-size: 14px; /* Text size below the icon */
-      transition: text-decoration 0.3s ease; /* Smooth underline on hover */
-    }
+.icon-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center align icon and text */
+  font-family: 'Bentham', serif;
+  font-size: 18px;
+  color: #000;
+  gap: 5px; /* Add spacing between icon and text */
+}
 
-    .icon-link:hover p {
-      text-decoration: underline; /* Underline text on hover */
-    }
+.icon-link {
+  text-decoration: none; /* Remove default link styles */
+  color: inherit; /* Inherit text color */
+  display: flex;
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center align content */
+  gap: 5px; /* Space between icon and text */
+}
 
-    /* Smooth Scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
+.icon-link .icon {
+  width: 24px; /* Adjust the size of the icons */
+  height: 24px;
+  transition: transform 0.3s ease; /* Add hover effect for icon */
+}
 
-    /* Section Styling */
-    section {
-      padding: 50px;
-      padding-top: 125px;
-      border-bottom: 1px solid #ddd;
-      background-color: #fff;
-    }
+.icon-link:hover .icon {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
 
-    .hero {
-      display: flex; /* Use flexbox for layout */
-      align-items: center; /* Center content vertically */
-      justify-content: center; /* Center content horizontally */
-      gap: 20px; /* Space between the headshot and text */
-      background-color: #f8f9fa;
-      padding-left: 50px; /* Add padding for spacing */
-      padding-right: 50px;
-      border-radius: 0px;
-    }
-    
-    .heroheadshot {
-      height: 400px;
-      width: auto; /* Maintain aspect ratio */
-      border-radius: 0px; /* Optional: Rounded edges */
-    }
-    
-    .herocontent {
-      display: flex; /* Use flexbox for inner layout */
-      flex-direction: column; /* Stack elements vertically */
-      align-items: center; /* Center-align text and buttons */
-      text-align: center; /* Ensure text is center-aligned */
-      gap: 25px; /* Add spacing between the elements */
-      padding: 40px;
-    }
-    
-    .herocontent h1 {
-      font-size: 4rem;
-      font-family: 'Georgia', serif;
-      margin: 0;
-    }
-    
-    .herocontent div {
-      font-size: 1.2rem;
-      color: #202020;
-    }
-    
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px; /* Space between buttons */
-    }
-    
-    .hero-buttons .btn-primary {
-      background-color: black;
-      color: white;
-      padding: 15px 30px;
-      font-size: 1.2rem;
-      border-radius: 15px;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-    
-    .hero-buttons .btn-primary:hover {
-      background-color: #333;
-      transform: scale(1.05);
-    }
-    
-    .hero-buttons .btn-secondary {
-      background-color: white;
-      color: black;
-      border: 2px solid gray;
-      padding: 15px 30px;
-      font-size: 1.2rem;
-      border-radius: 15px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-    
-    .hero-buttons .btn-secondary:hover {
-      background-color: rgba(85, 85, 85, 0.329);
-    }
+.icon-link p {
+  margin: 0;
+  font-size: 14px; /* Text size below the icon */
+  transition: text-decoration 0.3s ease; /* Smooth underline on hover */
+}
 
-    /* Section Headings */
-    section h2 {
-      font-size: 2rem;
-      font-family: 'Georgia', serif;
-      margin-bottom: 20px;
-      color: #444;
-    }
+.icon-link:hover p {
+  text-decoration: underline; /* Underline text on hover */
+}
 
-    section p {
-      font-size: 1rem;
-      line-height: 1.5;
-      color: #161616;
-    }
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
 
-    /* Image Row Styling */
-    .image-row {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      gap: 20px;
-      width: 100%;
-      padding: 20px;
-    }
+/* Section Styling */
+section {
+  padding: 50px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
 
-    .image-row div {
-      flex: 1;
-      max-width: 350px;
-      text-align: center;
-    }
+.hero {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  gap: 20px; /* Space between the headshot and text */
+  background-color: #f8f9fa;
+  padding-left: 50px; /* Add padding for spacing */
+  padding-right: 50px;
+  border-radius: 0px;
+}
 
-    .image-row img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.heroheadshot {
+  height: 400px;
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 0px; /* Optional: Rounded edges */
+}
 
-    .image-row img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-    }
+.herocontent {
+  display: flex; /* Use flexbox for inner layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align text and buttons */
+  text-align: center; /* Ensure text is center-aligned */
+  gap: 25px; /* Add spacing between the elements */
+  padding: 40px;
+}
 
-    .image-row p {
-      font-weight: bold;
-      margin-top: 10px;
-      font-size: 1rem;
-      color: #333;
-    }
+.herocontent h1 {
+  font-size: 4rem;
+  font-family: 'Georgia', serif;
+  margin: 0;
+}
+
+.herocontent div {
+  font-size: 1.2rem;
+  color: #202020;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+}
+
+.hero-buttons .btn-primary {
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-buttons .btn-primary:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.hero-buttons .btn-secondary {
+  background-color: white;
+  color: black;
+  border: 2px solid gray;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: rgba(85, 85, 85, 0.329);
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #161616;
+}
+
+/* Image Row Styling */
+.image-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.image-row div {
+  flex: 1;
+  max-width: 350px;
+  text-align: center;
+}
+
+.image-row img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-row p {
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+#contact {
+  background-color: rgb(72, 0, 5);
+  color: white; /* Ensure text color contrasts with the background */
+  padding: 50px 0; /* Adjust padding as needed */
+  text-align: center; /* Center align the content */
+}
+
+.contactcontainer{
+  display: flex;
+  padding: 50px;
+  color: white;
+  flex-direction: column;
+  justify-content: flex-start;
+}
