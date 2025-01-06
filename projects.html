@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Projects - Jeyadave's Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="projects">
+  <!-- Header -->
   <header class="header">
     <div class="homepanelflexcontainer">
-        <div>
-          <img src="assets/headshot-square.jpg" class="homepic" alt="Jeyadave's Headshot">
-        </div>
-        <div class="name-wrapper">
-          <a href="index.html" class="name">Jeyadave Nuntha Kumar</a>
-          <a href="index.html" class="subtext">CFD Engineer and Researcher &#183; USA | Singapore</a>
-        </div>
+      <div>
+        <img src="assets/headshot-square.jpg" class="homepic" alt="Jeyadave's Headshot">
+      </div>
+      <div class="name-wrapper">
+        <a href="index.html" class="name">Jeyadave Nuntha Kumar</a>
+        <a href="index.html" class="subtext">CFD Engineer and Researcher &#183; USA | Singapore</a>
+      </div>
     </div>
 
     <nav class="navbar">
@@ -27,26 +29,110 @@
     </nav>
 
     <div class="rightpanelflexcontainer">
-        <div class="icon-wrapper">
-          <a href="https://scholar.google.com/citations?user=kcN1jgkAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link">
-            <img src="assets/google-scholar-icon.png" alt="Google Scholar" class="icon">
-            <p>Google Scholar</p>
-          </a>
-        </div>
-        <div class="icon-wrapper">
-          <a href="https://www.linkedin.com/in/nkjeyadave/" target="_blank" class="icon-link">
-            <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
-            <p>LinkedIn</p>
-          </a>
-        </div>
+      <div class="icon-wrapper">
+        <a href="https://scholar.google.com/citations?user=kcN1jgkAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link">
+          <img src="assets/google-scholar-icon.png" alt="Google Scholar" class="icon">
+          <p>Google Scholar</p>
+        </a>
       </div>
+      <div class="icon-wrapper">
+        <a href="https://www.linkedin.com/in/nkjeyadave/" target="_blank" class="icon-link">
+          <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
+          <p>LinkedIn</p>
+        </a>
+      </div>
+    </div>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <section>
-      <h1>Projects</h1>
-      <p>Details about Jeyadave's projects, including key achievements and visuals, go here.</p>
+    <!-- Project 1 -->
+    <section class="project">
+      <hr class="project-divider">
+      <div class="project-container">
+        <!-- Left Panel for Images -->
+        <div class="image-panel">
+          <img src="assets/project1-image.jpg" alt="Project 1 Image" class="project-image">
+        </div>
+        <!-- Right Panel for Description -->
+        <div class="description-panel">
+          <h2>Project Title 1</h2>
+          <h3>Introduction</h3>
+          <p>
+            This project explores the design and construction of a balsa wood R/C glider to navigate an obstacle course. The focus was on optimizing lift-to-drag ratio and structural integrity.
+          </p>
+          <h3>Method</h3>
+          <p>
+            The glider was designed using CAD software, and aerodynamic performance was simulated with XFOIL. Prototyping included multiple iterations for balance and control surface tuning.
+          </p>
+          <h3>Results</h3>
+          <p>
+            The final model successfully completed the obstacle course, demonstrating superior handling and glide efficiency compared to initial prototypes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 2 -->
+    <section class="project">
+      <hr class="project-divider">
+      <div class="project-container">
+        <!-- Left Panel for Images -->
+        <div class="image-panel">
+          <img src="assets/project2-image.jpg" alt="Project 2 Image" class="project-image">
+        </div>
+        <!-- Right Panel for Description -->
+        <div class="description-panel">
+          <h2>Project Title 2</h2>
+          <h3>Introduction</h3>
+          <p>
+            This project involved developing a simulation tool for modeling flow patterns around a wing with Gurney flaps in a wind tunnel.
+          </p>
+          <h3>Method</h3>
+          <p>
+            Using STAR-CCM+, the simulations evaluated the aerodynamic effects of varying Gurney flap heights. Results were validated using experimental wind tunnel data.
+          </p>
+          <h3>Results</h3>
+          <p>
+            The study demonstrated that optimal flap heights could increase lift by up to 25%, paving the way for improved aerodynamic designs in aviation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 3 -->
+    <section class="project">
+      <hr class="project-divider">
+      <div class="project-container">
+        <!-- Left Panel for Images -->
+        <div class="image-panel">
+          <img src="assets/project3-image.jpg" alt="Project 3 Image" class="project-image">
+        </div>
+        <!-- Right Panel for Description -->
+        <div class="description-panel">
+          <h2>Project Title 3</h2>
+          <h3>Introduction</h3>
+          <p>
+            A custom-built flight simulator project aimed at enhancing pilot training capabilities and exploring realistic control dynamics.
+          </p>
+          <h3>Method</h3>
+          <p>
+            Leveraging Unity and MATLAB for control algorithms, the project integrated hardware joysticks and virtual reality for an immersive training experience.
+          </p>
+          <h3>Results</h3>
+          <p>
+            The simulator achieved high-fidelity motion and control dynamics, offering a valuable tool for both hobbyists and aviation enthusiasts.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Jeyadave Nuntha Kumar. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

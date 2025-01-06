@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Research - Jeyadave's Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="research">
+  <!-- Header -->
   <header class="header">
     <div class="homepanelflexcontainer">
-        <div>
-          <img src="assets/headshot-square.jpg" class="homepic" alt="Jeyadave's Headshot">
-        </div>
-        <div class="name-wrapper">
-          <a href="index.html" class="name">Jeyadave Nuntha Kumar</a>
-          <a href="index.html" class="subtext">CFD Engineer and Researcher &#183; USA | Singapore</a>
-        </div>
+      <div>
+        <img src="assets/headshot-square.jpg" class="homepic" alt="Jeyadave's Headshot">
+      </div>
+      <div class="name-wrapper">
+        <a href="index.html" class="name">Jeyadave Nuntha Kumar</a>
+        <a href="index.html" class="subtext">CFD Engineer and Researcher &#183; USA | Singapore</a>
+      </div>
     </div>
 
     <nav class="navbar">
@@ -27,26 +29,110 @@
     </nav>
 
     <div class="rightpanelflexcontainer">
-        <div class="icon-wrapper">
-          <a href="https://scholar.google.com/citations?user=kcN1jgkAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link">
-            <img src="assets/google-scholar-icon.png" alt="Google Scholar" class="icon">
-            <p>Google Scholar</p>
-          </a>
-        </div>
-        <div class="icon-wrapper">
-          <a href="https://www.linkedin.com/in/nkjeyadave/" target="_blank" class="icon-link">
-            <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
-            <p>LinkedIn</p>
-          </a>
-        </div>
+      <div class="icon-wrapper">
+        <a href="https://scholar.google.com/citations?user=kcN1jgkAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link">
+          <img src="assets/google-scholar-icon.png" alt="Google Scholar" class="icon">
+          <p>Google Scholar</p>
+        </a>
       </div>
+      <div class="icon-wrapper">
+        <a href="https://www.linkedin.com/in/nkjeyadave/" target="_blank" class="icon-link">
+          <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
+          <p>LinkedIn</p>
+        </a>
+      </div>
+    </div>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <section>
-      <h1>Research</h1>
-      <p>Details about Jeyadave's research projects, publications, and contributions go here.</p>
+    <!-- Project 1 -->
+    <section class="project">
+      <hr class="project-divider">
+      <div class="project-container">
+        <!-- Left Panel for Images -->
+        <div class="image-panel">
+          <img src="assets/project1-image.jpg" alt="Project 1 Image" class="project-image">
+        </div>
+        <!-- Right Panel for Description -->
+        <div class="description-panel">
+          <h2>Project Title 1</h2>
+          <h3>Introduction</h3>
+          <p>
+            This project investigates advanced airfoil designs to improve aerodynamic efficiency. The research focuses on low-drag configurations for subsonic and transonic flows.
+          </p>
+          <h3>Method</h3>
+          <p>
+            Computational simulations were performed using STAR-CCM+ to analyze flow behavior. The project employed turbulence models such as k-omega SST for detailed insights.
+          </p>
+          <h3>Results</h3>
+          <p>
+            The simulations demonstrated a 15% reduction in drag compared to conventional designs, validating the approach and contributing to industry benchmarks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 2 -->
+    <section class="project">
+      <hr class="project-divider">
+      <div class="project-container">
+        <!-- Left Panel for Images -->
+        <div class="image-panel">
+          <img src="assets/project2-image.jpg" alt="Project 2 Image" class="project-image">
+        </div>
+        <!-- Right Panel for Description -->
+        <div class="description-panel">
+          <h2>Project Title 2</h2>
+          <h3>Introduction</h3>
+          <p>
+            This research focuses on rotorcraft aerodynamics, specifically on improving rotor blade efficiency under variable wind conditions.
+          </p>
+          <h3>Method</h3>
+          <p>
+            Large-scale simulations were conducted using high-performance computing clusters. Meshing techniques optimized blade geometry, and rotorcraft dynamics were analyzed.
+          </p>
+          <h3>Results</h3>
+          <p>
+            The study achieved a 10% increase in lift-to-drag ratio, providing insights for future VTOL aircraft design improvements.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 3 -->
+    <section class="project">
+      <hr class="project-divider">
+      <div class="project-container">
+        <!-- Left Panel for Images -->
+        <div class="image-panel">
+          <img src="assets/project3-image.jpg" alt="Project 3 Image" class="project-image">
+        </div>
+        <!-- Right Panel for Description -->
+        <div class="description-panel">
+          <h2>Project Title 3</h2>
+          <h3>Introduction</h3>
+          <p>
+            This study explores heat transfer optimization in hypersonic flows using machine learning-enhanced CFD models.
+          </p>
+          <h3>Method</h3>
+          <p>
+            A hybrid approach combining neural networks and traditional solvers was implemented to improve thermal predictions in extreme conditions.
+          </p>
+          <h3>Results</h3>
+          <p>
+            The hybrid model improved accuracy by 20%, reducing computational time by half, making it feasible for real-time applications.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Jeyadave Nuntha Kumar. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
