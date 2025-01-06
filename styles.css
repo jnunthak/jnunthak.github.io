@@ -72,6 +72,11 @@ body {
   transition: color 0.3s ease;
 }
 
+.navbar a.active {
+  color: crimson; /* Highlight the active link */
+  text-decoration: underline; /* Optionally underline it */
+}
+
 .navbar a:hover {
   color: #555;
   text-decoration: underline;
@@ -129,6 +134,7 @@ body {
 /* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 /* Section Styling */
@@ -265,8 +271,6 @@ section p {
 }
 
 #contact {
-  background-color: rgb(72, 0, 5);
-  color: white; /* Ensure text color contrasts with the background */
   padding: 50px 0; /* Adjust padding as needed */
   text-align: center; /* Center align the content */
 }
@@ -274,7 +278,7 @@ section p {
 .contactcontainer{
   display: flex;
   padding: 50px;
-  color: white;
+  color: black;
   flex-direction: column;
   justify-content: flex-start;
 }
