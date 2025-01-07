@@ -50,24 +50,31 @@
     <section class="project">
       <hr class="project-divider">
       <div class="project-container">
-        <!-- Left Panel for Images -->
+        <!-- Left Panel for Images (Stacked Vertically) -->
         <div class="image-panel">
-          <img src="assets/project1-image.jpg" alt="Project 1 Image" class="project-image">
+          <img src="assets/GLMWT Schematic.png" alt="Project 1 Image 1" class="project-image">
+          <img src="assets/Mesh.png" alt="Project 1 Image 2" class="project-image">
+          <img src="assets/GLMWT velocity.png" alt="Project 1 Image 3" class="project-image">
         </div>
         <!-- Right Panel for Description -->
         <div class="description-panel">
-          <h2>Project Title 1</h2>
-          <h3>Introduction</h3>
+          <h2>CFD Modeling of the Glenn L. Martin Wind Tunnel</h2>
+          <p>Advised by Dr. Jewel Barlow</p>
+          <h3>Purpose</h3>
           <p>
-            This project investigates advanced airfoil designs to improve aerodynamic efficiency. The research focuses on low-drag configurations for subsonic and transonic flows.
+            The Glenn L. Martin Wind tunnel is a classic subsonic wind tunnel actively involved in research and development since 1949. During initial commissioning time, it was determined to install vortex generators to alleviate separation in the first diffuser. In revisiting these designs, it was ultimately determined that simulation of the entire internal circuit is needed to capture the influences of significant features. A CFD model of the circuit needed to be developed to investigate flow uniformity and power requirements for a given test section speed. 
           </p>
           <h3>Method</h3>
           <p>
-            Computational simulations were performed using STAR-CCM+ to analyze flow behavior. The project employed turbulence models such as k-omega SST for detailed insights.
+            The CFD simulation software <span style="font-weight: bold;">STAR-CCM+</span> was used to handle mesh generation and repair, solving, and post-processing. The project has been heavily reliant on the <span style="font-weight: bold;">high-performance computing (HPC)</span> resources at the University of Maryland. I wrote <span style="font-weight: bold;">Shell scripts</span> to submit jobs, <span style="font-weight: bold;">Java</span> macros to automate STAR-CCM+, and <span style="font-weight: bold;">Python</span> to document job statistics. I wrote a <span style="font-weight: bold;">Python</span> script that calculates inflation layer parameters based on turbulent boundary layer theory to target specific y+. Meshes of the 3,500-cubic-meter circuit on the order of 200 million to 800 million cells were created. The axial fan was modeled by a periodic pressure jump boundary condition with pressure jump values chosen to match physical operating conditions. To improve the simulation, various levels of mesh refinement, turbulence models, and dynamic boundary conditions were explored. Simulations are validated by comparing simulated and actual test section velocities.
           </p>
           <h3>Results</h3>
           <p>
-            The simulations demonstrated a 15% reduction in drag compared to conventional designs, validating the approach and contributing to industry benchmarks.
+            For a 70 MPH test section case, the CFD model test section velocity prediction was improved from over 20% to 6%. Computed data verify flow separation in the diffuser and recirculation zones downstream of the fan. Future work involves assessing simulation validity for other test cases and reducing the uncertainty of experimental measurements of the validation metrics, as well as applying adaptive mesh refinement. Extensive use of <span style="font-weight: bold;">LaTeX</span> for documentation. Currently drafting a manuscript and presentation for the <span style="font-weight: bold;">AIAA Region III Student Conference</span>.
+          </p>
+          <h3>Awards</h3>
+          <p>
+            (2023) Aerospace Engineering Research Opportunity Scholars (AEROS) Recipient
           </p>
         </div>
       </div>
@@ -77,24 +84,26 @@
     <section class="project">
       <hr class="project-divider">
       <div class="project-container">
-        <!-- Left Panel for Images -->
+        <!-- Left Panel for Images (Stacked Vertically) -->
         <div class="image-panel">
-          <img src="assets/project2-image.jpg" alt="Project 2 Image" class="project-image">
+          <img src="assets/5_mod7.png" alt="Project 2 Image 2" class="project-image">
+          <img src="assets/cpcomparison.png" alt="Project 2 Image 3" class="project-image">
         </div>
         <!-- Right Panel for Description -->
         <div class="description-panel">
-          <h2>Project Title 2</h2>
-          <h3>Introduction</h3>
+          <h2>CFD-based Surrogate Model for Predicting Aerodynamics of ROBIN Fuselages</h2>
+          <p>Advised by Dr. James Baeder</p>
+          <h3>Purpose</h3>
           <p>
-            This research focuses on rotorcraft aerodynamics, specifically on improving rotor blade efficiency under variable wind conditions.
+            To determine if a machine learning surrogate model for helicopter fuselage geometries can be obtained from low-fidelty CFD data, and investigate its use in inverse design.
           </p>
           <h3>Method</h3>
           <p>
-            Large-scale simulations were conducted using high-performance computing clusters. Meshing techniques optimized blade geometry, and rotorcraft dynamics were analyzed.
+            Wrote a <span style="font-weight: bold;">Python</span> script that generates an STL representation of ROBIN and ROBIN-MOD7 helicopter fuselages based on ROBIN super ellipse parameterization, and created CFD surface meshes using <span style="font-weight: bold;">Autodesk Meshmixer</span>. Interfaced my code with the <span style="font-weight: bold;">OpenVSP Python API</span> to automate native geometry generation and to execute the <span style="font-weight: bold;">VSPAero</span> panel method solver and associated parasite drag analyses. 
           </p>
           <h3>Results</h3>
           <p>
-            The study achieved a 10% increase in lift-to-drag ratio, providing insights for future VTOL aircraft design improvements.
+            The study showed that panel method and Euler solvers do not have the sufficient fidelity for resolving helicopter fuselage geometry due to the bluff body shape and flow separation in the helicopter ramp. In-house RANS solvers are able to produce data that more closely matches experimental data for training a surrogate model. Current efforts are in improving surface mesh generation using <span style="font-weight: bold;">GMSH</span> and <span style="font-weight: bold;">OpenFOAM cfmesh</span> and exploring alternate 3D parameterization approaches such as piecewice spline.
           </p>
         </div>
       </div>
@@ -104,24 +113,26 @@
     <section class="project">
       <hr class="project-divider">
       <div class="project-container">
-        <!-- Left Panel for Images -->
+        <!-- Left Panel for Images (Stacked Vertically) -->
         <div class="image-panel">
-          <img src="assets/project3-image.jpg" alt="Project 3 Image" class="project-image">
+          <img src="assets/modular.png" alt="Project 3 Image 1" class="project-image">
+          <img src="assets/traverse.png" alt="Project 3 Image 2" class="project-image">
         </div>
         <!-- Right Panel for Description -->
         <div class="description-panel">
-          <h2>Project Title 3</h2>
-          <h3>Introduction</h3>
+          <h2>Vertically Integrated Projects (VIPS): Go with the Flow! Empowering Hands-on Fluid Dynamics Education</h2>
+          <p>Advised by Dr. Kenneth Kiger</p>
+          <h3>Purpose</h3>
           <p>
-            This study explores heat transfer optimization in hypersonic flows using machine learning-enhanced CFD models.
+            Research and develop a wind tunnel kit that can be used by students within their own home to supplement their coursework in fundamental fluid dynamics concepts through experiential learning. The kit is initially evaluated at $150.
           </p>
           <h3>Method</h3>
           <p>
-            A hybrid approach combining neural networks and traditional solvers was implemented to improve thermal predictions in extreme conditions.
+            As a member of the boundary layer and fan characteristic subteam, I collaborated within a team of ~10 multidisciplinary engineering students to design a modular wind tunnel kit. I conducted a literature review to inform design of a boundary layer module and fan characteristic modules. Using <span style="font-weight: bold;">SOLIDWORKS</span>, I managed assemblies and helped create various 3D CAD parts including the iris mechanism shown on the left. The boundary layer and fan characteristic modules, meant for exploration of Bernoulli's principle, flow separation, and fan performance curves. I kept a personal notebook throughout the project to document my progress and my teammates' contributions. I also created renders and animations to showcase our designs with <span style="font-weight: bold;">SOLIDWORKS</span>. Recently, I assisted in validation of the latest prototype thrust stand experiment.
           </p>
           <h3>Results</h3>
           <p>
-            The hybrid model improved accuracy by 20%, reducing computational time by half, making it feasible for real-time applications.
+            Experimental validation has shown that the designed thrust stand performs efficiently and is axisymmetric, and thrust was measured with our manometer with a 0.3% accuracy. Measurements downstream of the nozzle shows an increase in error due to flow entrainment and turbulent mixing. I presented our work alongside 2 other students at <span style="font-weight: bold;">APS DFD 2024</span> to other fluid mechanics educators. Currently drafting a manuscript for <span style="font-weight: bold;">ASEE 2025</span>.
           </p>
         </div>
       </div>

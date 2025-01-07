@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Jeyadave's Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
@@ -9,15 +10,14 @@
 </head>
 <body>
   <header class="header">
-
     <div class="homepanelflexcontainer">
-        <div>
-          <img src="assets/headshot-square.jpg" class="homepic" alt="Jeyadave's Headshot">
-        </div>
-        <div class="name-wrapper">
-          <a href="index.html" class="name">Jeyadave Nuntha Kumar</a>
-          <a href="index.html" class="subtext">CFD Engineer and Researcher &#183; USA | Singapore</a>
-        </div>
+      <div>
+        <img src="assets/headshot-square.jpg" class="homepic" alt="Jeyadave's Headshot">
+      </div>
+      <div class="name-wrapper">
+        <a href="index.html" class="name">Jeyadave Nuntha Kumar</a>
+        <a href="index.html" class="subtext">CFD Engineer and Researcher &#183; USA | Singapore</a>
+      </div>
     </div>
 
     <nav class="navbar">
@@ -29,44 +29,76 @@
     </nav>
 
     <div class="rightpanelflexcontainer">
-        <div class="icon-wrapper">
-          <a href="https://scholar.google.com/citations?user=kcN1jgkAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link">
-            <img src="assets/google-scholar-icon.png" alt="Google Scholar" class="icon">
-            <p>Google Scholar</p>
-          </a>
+      <div class="icon-wrapper">
+        <a href="https://scholar.google.com/citations?user=kcN1jgkAAAAJ&hl=en&oi=ao" target="_blank" class="icon-link">
+          <img src="assets/google-scholar-icon.png" alt="Google Scholar" class="icon">
+          <p>Google Scholar</p>
+        </a>
+      </div>
+      <div class="icon-wrapper">
+        <a href="https://www.linkedin.com/in/nkjeyadave/" target="_blank" class="icon-link">
+          <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
+          <p>LinkedIn</p>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="about-page">
+    <div class="about-container">
+      <!-- Left Panel -->
+      <div class="about-left-panel">
+        <h2>Education</h2>
+        <div class="about-entry">
+          <p><strong>B.S., University of Maryland (Aerospace Engineering)</strong> - Minor in Mathematics and Global Engineering Leadership</p>
         </div>
-        <div class="icon-wrapper">
-          <a href="https://www.linkedin.com/in/nkjeyadave/" target="_blank" class="icon-link">
-            <img src="assets/linkedin-icon.png" alt="LinkedIn" class="icon">
-            <p>LinkedIn</p>
-          </a>
+
+        <h2>Professional Memberships</h2>
+        <div class="about-entry">
+          <p>American Institute of Aeronautics and Astronautics <strong>(AIAA)</strong></p>
+        </div>
+        <div class="about-entry">
+          <p>Out in Science, Technology, Engineering, and Mathematics <strong>(oSTEM)</strong></p>
+        </div>
+
+        <h2>Selected Awards</h2>
+        <div class="about-entry">
+          <p>Iribe Initiative for Inclusion & Diversity in Computing oSTEM Conference Scholarship (2024)</p>
+        </div>
+        <div class="about-entry">
+          <p>Out for Undergrad Conference Scholarship (2024)</p>
+        </div>
+        <div class="about-entry">
+          <p>Aerospace Engineering Research Opportunity Scholars (2023)</p>
         </div>
       </div>
 
-  </header>
+      <!-- Center Panel -->
+      <div class="about-center-panel">
+        <h1>My Story</h1>
+        <p>
+          Hi, I'm <strong>Jeyadave Nuntha Kumar</strong>, a passionate Computational Fluid Dynamics (CFD) engineer and researcher with a strong interest in complex flows, turbulence modeling, and higher order numerical methods.
+        </p>
+        <p>
+          My love for CFD bloomed during my undergraduate research at the Glenn L. Martin Wind Tunnel located at the University of Maryland. Jumping into such a complex and computationally demanding project was one of my hardest academic challenges, but one that allowed me to channel my appreciation for aerodynamics and fluid mechanics into tough, unsolved problems. Since then, I have been captivated by all aspects of CFD, including those often visited by applied mathematicians and computer scientists.
+        </p>
+        <p>
+          I've been privileged to work on impactful aerospace research and foster inclusivity in STEM through mentorship and leadership. My multicultural experiences spanning the USA and Singapore have instilled a global perspective and appreciation for diverse ideas.
+        </p>
+        <p>
+          Outside of work, I enjoy playing classical and anime music on the piano, discovering new food, and watching Star Trek. 
+        </p>
+      </div>
 
-  
-
-  <main>
-    <section id="about-section">
-      <h1>About Me</h1>
-      <p>
-        Hi, I'm <strong>Jeyadave Nuntha Kumar</strong>, a passionate Computational Fluid Dynamics (CFD) engineer and researcher with a deep interest in aerodynamics, turbulence modeling, and simulation techniques. I thrive at the intersection of technical rigor and creative problem-solving, focusing on impactful projects that push the boundaries of aerospace technology.
-      </p>
-      <p>
-        I'm currently completing my undergraduate studies in Aerospace Engineering at the University of Maryland - College Park, with minors in Mathematics and Global Engineering Leadership. My academic journey is driven by a commitment to excellence, reflected in my consistent academic achievements and involvement in cutting-edge research.
-      </p>
-      <h2>What Drives Me</h2>
-      <p>
-        My professional interests are rooted in making significant contributions to the aerospace industry, particularly through the lens of CFD. Beyond engineering, I am passionate about fostering inclusivity in STEM, mentoring aspiring engineers, and bridging the gap between academia and real-world applications.
-      </p>
-      <h2>Outside of Work</h2>
-      <p>
-        Outside of my technical pursuits, I enjoy building remote-controlled aircraft, exploring new ideas in leadership development, and advocating for inclusive practices in engineering education. My multicultural background, spanning the USA and Singapore, has given me a global perspective and an appreciation for diverse ideas and cultures.
-      </p>
-    </section>
+      <!-- Right Panel -->
+      <div class="about-right-panel">
+        <img src="assets/headshot.jpg" alt="About Me Image" class="about-image">
+      </div>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>© 2025 Jeyadave Nuntha Kumar. All Rights Reserved.</p>

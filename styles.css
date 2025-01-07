@@ -56,9 +56,11 @@ html {
 .name-wrapper .subtext {
   font-size: smaller;
   color: #2b2b2b;
+  text-decoration: none;
   margin: 0;
   white-space: nowrap;
 }
+
 
 .navbar {
   display: flex;
@@ -267,13 +269,27 @@ section p {
 
 .image-panel {
   width: 40%;
+  position: relative;
+  background: linear-gradient(to bottom, #f0f4f7, #dde7eb); /* Soft gradient */
+  padding: 5px;
+  border-radius: 8px; /* Rounded corners for a polished look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.image-panel img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px; /* Spacing between images */
+  border-radius: 8px; /* Rounded corners (optional) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .project-image {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px; /* Match the panel's rounded corners */
 }
 
 .description-panel {
@@ -360,3 +376,143 @@ section p {
   color: #555;
   max-width: 1200px; /* Limits the width for better readability */
 }
+
+/* Carousel Styling */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-images img {
+  min-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* About Page Layout */
+#about-page {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1fr; /* Wider left panel */
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+}
+
+/* Left Panel */
+.about-left-panel {
+  padding-right: 30px; /* Extra padding for more content */
+  border-right: 2px solid #ddd;
+}
+
+.about-left-panel h2 {
+  color: #1d1348;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd; /* Underline for section headings */
+  padding-bottom: 5px;
+}
+
+.about-entry {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+
+
+.about-entry::before {
+  content: '\276F'; /* Unicode for right arrow */
+  color: crimson;
+  font-size: 1rem;
+  margin-top: 2px; /* Align arrow with text */
+}
+
+.about-entry p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  
+}
+
+/* Center Panel */
+.about-center-panel h1 {
+  font-size: 1.8rem;
+  color: #1d1348;
+  margin-bottom: 15px;
+}
+
+.about-center-panel p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Right Panel */
+.about-right-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-right-panel img {
+  max-width: 110%;
+  height: auto;
+  border-radius: 0px;
+}
+
+/* General Panel Adjustments */
+.about-container > div {
+  padding: 10px;
+}
+
+
+/* Footer Styling */
+.footer-content {
+  text-align: center;
+  padding: 15px;
+  background-color: #f1f1f1;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+

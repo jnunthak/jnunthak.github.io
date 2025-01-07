@@ -34,3 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.querySelectorAll(".carousel").forEach((carousel) => {
+  const images = carousel.querySelector(".carousel-images");
+  const prevButton = carousel.querySelector(".carousel-button.prev");
+  const nextButton = carousel.querySelector(".carousel-button.next");
+
+  let index = 0;
+
+  const updateCarousel = () => {
+    images.style.transform = `translateX(-${index * 100}%)`;
+  };
+
+  prevButton.addEventListener("click", () => {
+    index = (index - 1 + images.children.length) % images.children.length;
+    updateCarousel();
+  });
+
+  nextButton.addEventListener("click", () => {
+    index = (index + 1) % images.children.length;
+    updateCarousel();
+  });
+});
