@@ -55,31 +55,32 @@
           <div class="carousel">
             <button class="carousel-button prev">❮</button>
             <div class="carousel-images">
-              <img src="assets/project1-image1.jpg" alt="Project 1 Image 1" class="project-image">
-              <img src="assets/project1-image2.jpg" alt="Project 1 Image 2" class="project-image">
-              <img src="assets/project1-image3.jpg" alt="Project 1 Image 3" class="project-image">
+              <img src="assets/pointwiser.png" alt="Project 1 Image 1" class="project-image">
+              <img src="assets/tecplot.png" alt="Project 1 Image 2" class="project-image">
+              <img src="assets/streamlines.png" alt="Project 1 Image 3" class="project-image">
             </div>
             <button class="carousel-button next">❯</button>
           </div>
         </div>
         <!-- Right Panel for Description -->
         <div class="description-panel">
-          <h2>Project Title 1</h2>
-          <h3>Introduction</h3>
+          <h2>Computational Fluid Dynamics (ENAE488C) Reports</h2>
+          <h3>About</h3>
           <p>
-            This project explores the design and construction of a balsa wood R/C glider to navigate an obstacle course. The focus was on optimizing lift-to-drag ratio and structural integrity.
+            Performed CFD simulations for a variety of cases and created presentations of results in a series of reports. Investigated variation of CL and CD at various angles of attack and at various Mach numbers for fixed angle of attack for a NACA 6412 airfoil. Compared CFD simulations of inviscid flow over a 24-degree wedge, as well as viscous flow with various incoming boundary layer conditions (Musker, none) and turbulence models (SA, SST, k-e). Grid independence studies were also performed, comparing various levels of refinement between structured and unstructured meshes.
           </p>
-          <h3>Method</h3>
+          <h3>How</h3>
           <p>
-            The glider was designed using CAD software, and aerodynamic performance was simulated with XFOIL. Prototyping included multiple iterations for balance and control surface tuning.
-          </p>
-          <h3>Results</h3>
-          <p>
-            The final model successfully completed the obstacle course, demonstrating superior handling and glide efficiency compared to initial prototypes.
+            <strong>Pointwise</strong> was used to create the computational domain for each case. Then, the CFD solver <strong>CFD++</strong> was set up to reach the solution. <strong>Tecplot</strong> was used to visualize results and create Mach and pressure contours. Using <strong>Excel</strong>, I analyzed the errors in the solution, compared data between sweeps, and generated associated plots. The objectives, method, results, and conclusions have been summarized in <strong>PowerPoint</strong> presentations.
           </p>
         </div>
       </div>
     </section>
+
+    <div id="image-modal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modal-image" alt="Expanded Project Image">
+    </div>
 
     <!-- Project 2 -->
     <section class="project">
@@ -90,62 +91,23 @@
           <div class="carousel">
             <button class="carousel-button prev">❮</button>
             <div class="carousel-images">
-              <img src="assets/project2-image1.jpg" alt="Project 2 Image 1" class="project-image">
-              <img src="assets/project2-image2.jpg" alt="Project 2 Image 2" class="project-image">
-              <img src="assets/project2-image3.jpg" alt="Project 2 Image 3" class="project-image">
+              <img src="assets/comparisontool1.png" alt="Project 2 Image 1" class="project-image">
+              <img src="assets/comparisontool2.png" alt="Project 2 Image 2" class="project-image">
+              <img src="assets/comparisontool3.png" alt="Project 2 Image 3" class="project-image">
             </div>
             <button class="carousel-button next">❯</button>
           </div>
         </div>
         <!-- Right Panel for Description -->
         <div class="description-panel">
-          <h2>Project Title 2</h2>
-          <h3>Introduction</h3>
+          <h2>Aircraft Comparison Tool</h2>
+          <h3>About</h3>
           <p>
-            This project involved developing a simulation tool for modeling flow patterns around a wing with Gurney flaps in a wind tunnel.
+            The Aircraft Comparison Tool is a GUI app which compares various Airbus aircraft across a variety of attributes including range, maximum takeoff weight, and wing span. The tool is inspired by the <a href="https://www.hofstede-insights.com/country-comparison-tool" style="color: inherit">Country Comparison Tool</a> based on Hofstede's cultural dimensions. Additionally, line drawings of each aircraft can be viewed within the GUI. 
           </p>
-          <h3>Method</h3>
+          <h3>How</h3>
           <p>
-            Using STAR-CCM+, the simulations evaluated the aerodynamic effects of varying Gurney flap heights. Results were validated using experimental wind tunnel data.
-          </p>
-          <h3>Results</h3>
-          <p>
-            The study demonstrated that optimal flap heights could increase lift by up to 25%, paving the way for improved aerodynamic designs in aviation.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Project 3 -->
-    <section class="project">
-      <hr class="project-divider">
-      <div class="project-container">
-        <!-- Left Panel for Images Carousel -->
-        <div class="image-panel">
-          <div class="carousel">
-            <button class="carousel-button prev">❮</button>
-            <div class="carousel-images">
-              <img src="assets/project3-image1.jpg" alt="Project 3 Image 1" class="project-image">
-              <img src="assets/project3-image2.jpg" alt="Project 3 Image 2" class="project-image">
-              <img src="assets/project3-image3.jpg" alt="Project 3 Image 3" class="project-image">
-            </div>
-            <button class="carousel-button next">❯</button>
-          </div>
-        </div>
-        <!-- Right Panel for Description -->
-        <div class="description-panel">
-          <h2>Project Title 3</h2>
-          <h3>Introduction</h3>
-          <p>
-            A custom-built flight simulator project aimed at enhancing pilot training capabilities and exploring realistic control dynamics.
-          </p>
-          <h3>Method</h3>
-          <p>
-            Leveraging Unity and MATLAB for control algorithms, the project integrated hardware joysticks and virtual reality for an immersive training experience.
-          </p>
-          <h3>Results</h3>
-          <p>
-            The simulator achieved high-fidelity motion and control dynamics, offering a valuable tool for both hobbyists and aviation enthusiasts.
+            The app is built entirely in <strong>Python</strong> and leverages the <strong>CustomTkinter</strong> desktop UI-library for creating a more modern-looking and customizable application as compared to the default tkinter extension. To visually compare the aircraft attributes, the data is plotted in a multiple bar graph using the <strong>Matplotlib</strong> library. All aircraft data attributes are stored in an Excel file and accessed with the use of the <strong>Pandas</strong> library.
           </p>
         </div>
       </div>

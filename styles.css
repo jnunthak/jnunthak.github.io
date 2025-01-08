@@ -224,6 +224,48 @@ section p {
   background-color: rgba(85, 85, 85, 0.329);
 }
 
+/* Skills Section */
+#skills {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+#skills h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
 /* Image Row Styling */
 .image-row {
   display: flex;
@@ -255,7 +297,7 @@ section p {
 .image-row p {
   font-weight: bold;
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #333;
 }
 
@@ -270,8 +312,9 @@ section p {
 .image-panel {
   width: 40%;
   position: relative;
-  background: linear-gradient(to bottom, #f0f4f7, #dde7eb); /* Soft gradient */
+  background: linear-gradient(to bottom, #ebf2f6, #d4e2ed); /* Soft gradient */
   padding: 5px;
+  padding-top: 15px;
   border-radius: 8px; /* Rounded corners for a polished look */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
@@ -290,6 +333,13 @@ section p {
   display: block;
   margin: 0 auto;
   border-radius: 8px; /* Match the panel's rounded corners */
+}
+
+.project-image:hover {
+  cursor: pointer;
+  transform: scale(0.99);
+  box-shadow: 0 6px 10px rgba(0, 21, 205, 0.2);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .description-panel {
@@ -382,6 +432,7 @@ section p {
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding-top:5px;
 }
 
 .carousel-images {
@@ -393,6 +444,14 @@ section p {
   min-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.carousel-images img:hover {
+  cursor: pointer;
+  transform: scale(0.99); /* Slightly shrink initially */
+  box-shadow: 0 6px 10px rgba(0, 21, 205, 0.2);
+  transition: 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
 }
 
 .carousel-button {
@@ -513,6 +572,50 @@ section p {
   background-color: #f1f1f1;
   font-size: 0.9rem;
   color: #333;
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(16, 17, 39, 0.8); /* Dark background */
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initial opacity */
+  transform: scale(0.9); /* Slightly shrink initially */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.modal.show {
+  display: flex; /* Show modal */
+  opacity: 1; /* Fully opaque */
+  transform: scale(1); /* Restore scale */
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 

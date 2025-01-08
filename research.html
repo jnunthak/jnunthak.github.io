@@ -95,11 +95,11 @@
           <p>Advised by Dr. James Baeder</p>
           <h3>Purpose</h3>
           <p>
-            To determine if a machine learning surrogate model for helicopter fuselage geometries can be obtained from low-fidelty CFD data, and investigate its use in inverse design.
+            To determine if a machine learning surrogate model for helicopter fuselage geometries can be obtained from low-fidelty CFD data, and investigate its use in inverse design of helicopter fuselages.
           </p>
           <h3>Method</h3>
           <p>
-            Wrote a <span style="font-weight: bold;">Python</span> script that generates an STL representation of ROBIN and ROBIN-MOD7 helicopter fuselages based on ROBIN super ellipse parameterization, and created CFD surface meshes using <span style="font-weight: bold;">Autodesk Meshmixer</span>. Interfaced my code with the <span style="font-weight: bold;">OpenVSP Python API</span> to automate native geometry generation and to execute the <span style="font-weight: bold;">VSPAero</span> panel method solver and associated parasite drag analyses. 
+            I wrote a <span style="font-weight: bold;">Python</span> script that generates an STL representation of ROBIN and ROBIN-MOD7 helicopter fuselages based on ROBIN super ellipse parameterization, and created CFD surface meshes using <span style="font-weight: bold;">Autodesk Meshmixer</span>. I interfaced my code with the <span style="font-weight: bold;">OpenVSP Python API</span> to automate native geometry generation and to execute the <span style="font-weight: bold;">VSPAero</span> panel method solver and to extract and plot the data. 
           </p>
           <h3>Results</h3>
           <p>
@@ -137,7 +137,14 @@
         </div>
       </div>
     </section>
-  </main>
+    
+  </main> 
+
+    <!-- Modal for Image Viewer -->
+    <div id="image-modal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modal-image" alt="Expanded Project Image">
+    </div>
 
   <!-- Footer -->
   <footer>
@@ -145,5 +152,7 @@
       <p>© 2025 Jeyadave Nuntha Kumar. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

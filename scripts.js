@@ -56,3 +56,36 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
     updateCarousel();
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("image-modal");
+  const modalImage = document.getElementById("modal-image");
+  const closeModal = document.querySelector(".modal-close");
+
+  // Open modal on image click
+  document.querySelectorAll(".project-image").forEach(image => {
+    image.addEventListener("click", () => {
+      modal.style.display = "flex"; // Ensure modal is visible before transition
+      setTimeout(() => modal.classList.add("show"), 10); // Add "show" class after a tiny delay
+      modalImage.src = image.src; // Set the clicked image as modal image
+    });
+  });
+
+  // Close modal on close button click
+  closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+    setTimeout(() => {
+      modal.style.display = "none"; // Hide modal after transition
+    }, 300); // Match the duration of the CSS transition
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.classList.remove("show");
+      setTimeout(() => {
+        modal.style.display = "none"; // Hide modal after transition
+      }, 300); // Match the duration of the CSS transition
+    }
+  });
+});
