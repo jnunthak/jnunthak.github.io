@@ -301,6 +301,105 @@ section p {
   color: #333;
 }
 
+/* Contact Section */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contact-left-panel {
+  flex: 0.7; /* Reduce the width of the left panel */
+  border-right: 2px solid #ddd;
+  padding-right: 20px;
+}
+
+.contact-middle-panel {
+  flex: 1.3; /* Increase the width of the middle panel */
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.contact-left-panel h2,
+.contact-middle-panel h2 {
+  font-size: 1.5rem;
+  color: #1d1348;
+  margin-bottom: 15px;
+}
+
+.contact-left-panel p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.contact-middle-panel {
+  padding-left: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+#send-message-btn {
+  background-color: #1d1348;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#send-message-btn:hover {
+  background-color: #333;
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left-panel {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+  }
+
+  .contact-middle-panel {
+    padding-left: 0;
+  }
+}
+
 /* Research & Projects Page */
 .project-container {
   display: flex;
