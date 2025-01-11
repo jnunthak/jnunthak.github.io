@@ -89,3 +89,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Smooth scroll to the image gallery section when "See my work" button is clicked
+  const seeMyWorkButton = document.querySelector('.btn-primary');
+
+  if (seeMyWorkButton) {
+    seeMyWorkButton.addEventListener("click", (event) => {
+      event.preventDefault(); // Prevent the default anchor behavior
+      const imageGallerySection = document.getElementById('image-gallery');
+
+      if (imageGallerySection) {
+        imageGallerySection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  }
+});
